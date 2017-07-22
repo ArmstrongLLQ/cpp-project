@@ -1,0 +1,4 @@
+#! /bin/sh
+echo "today is " `date`
+DATE=`date`
+echo DATE=$DATE

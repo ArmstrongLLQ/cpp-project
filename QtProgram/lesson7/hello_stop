@@ -1,0 +1,9 @@
+#!/bin/sh
+
+WHOAMI=`whoami`
+
+PID=`ps -u $WHOAMI | grep hello | awk '{print $2}'`
+
+if (test "$PID" != "") then
+	kill -s 2 $PID
+fi
